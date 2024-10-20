@@ -28,7 +28,7 @@
   },
   "include": [
     "**/*.ts",
-    "**/*.tsx",
+    "**/*.tsx", "src/App.js",
   ],
   "exclude": [
     "**/*.spec.ts",

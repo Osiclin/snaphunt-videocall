@@ -7,18 +7,24 @@ export const VideoStream = () => {
         [
             { source: Track.Source.Camera, withPlaceholder: true },
             { source: Track.Source.ScreenShare, withPlaceholder: false },
+            { source: Track.Source.Microphone, withPlaceholder: false },
         ],
         { onlySubscribed: false },
     );
 
     return (
         <div>
-            <GridLayout tracks={tracks} style={{ height: 'calc(100vh - var(--lk-control-bar-height))' }}>
-                <>
+            <GridLayout tracks={tracks}>
+                <div>
                     <ParticipantTile />
-                    <ParticipantList />
-                </>
+                </div>
             </GridLayout>
+            <ParticipantList />
+            {/* {tracks.map((trackRef: any) =>
+                trackRef.source === Track.Source.Microphone ? (
+                    <AudioTrack trackRef={trackRef} /> // Pass the audio track directly
+                ) : null
+            )} */}
         </div>
     )
 }

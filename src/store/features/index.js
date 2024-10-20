@@ -1,1 +1,1 @@
-export { default as videoReducer } from "./video/videoSlice"
+export { default as videoReducer } from "./videoSlice"
