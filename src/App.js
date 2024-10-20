@@ -20,8 +20,10 @@ function App() {
         // style={{ height: '100vh' }}
         >
           <VideoStream>
-            <ParticipantTile />
-            <ParticipantList />
+            <div>
+              <ParticipantTile />
+              <ParticipantList />
+            </div>
           </VideoStream>
         </LiveKitRoom>
       ) :
