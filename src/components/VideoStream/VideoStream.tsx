@@ -20,11 +20,6 @@ export const VideoStream = () => {
                 </div>
             </GridLayout>
             <ParticipantList />
-            {/* {tracks.map((trackRef: any) =>
-                trackRef.source === Track.Source.Microphone ? (
-                    <AudioTrack trackRef={trackRef} /> // Pass the audio track directly
-                ) : null
-            )} */}
         </div>
     )
 }
